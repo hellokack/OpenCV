@@ -134,30 +134,6 @@ cv.destroyAllWindows() # 모든 창을 닫고 프로그램을 종료합니다.
 ### 5. 실행 결과 사진
 ![alt text](image-1.png)
 
-📌 실습 03: 마우스로 영역 선택 및 ROI(관심영역) 추출
-1. 문제 정의
-이미지를 불러오고 사용자가 마우스로 클릭 및 드래그하여 관심영역(ROI)을 선택합니다.
-마우스를 놓으면 해당 영역을 잘라내서 별도의 창에 출력합니다. 'r' 키를 누르면 영역 선택을 리셋하고, 's' 키를 누르면 선택한 영역을 이미지 파일로 저장합니다.
-
-2. 핵심 개념
-Numpy 배열 슬라이싱: 드래그 시작점과 끝점을 통해 얻은 좌표계를 이용해 이미지 배열에서 원하는 특정 범위만 잘라내어 ROI를 추출합니다.
-
-도형 그리기 (cv.rectangle): 드래그 중인 영역을 직관적으로 시각화하기 위해 사각형을 화면에 그립니다.
-
-파일 저장 (cv.imwrite) 및 대화상자 (tkinter): 추출된 ROI를 사용자가 지정한 이름과 경로로 저장합니다.
-
-3. 핵심 코드
-Python
-# ROI 추출 (마우스 시작점과 끝점 좌표 정렬 후 슬라이싱)
-x1, x2 = min(ix, fx), max(ix, fx)
-y1, y2 = min(iy, fy), max(iy, fy)
-roi = clone[y1:y2, x1:x2]
-
-# 파일 저장 창 띄우기 및 저장
-save_path = filedialog.asksaveasfilename(title="저장 위치 선택", defaultextension=".jpg")
-if save_path:
-    cv.imwrite(save_path, roi)
-
 ---
 
 ## 📌 실습 03: 마우스로 영역 선택 및 ROI(관심영역) 추출
