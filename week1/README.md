@@ -255,4 +255,4 @@ cv.destroyAllWindows() # 모든 창을 닫습니다.
 ```
 
 ### 5. 실행 결과 사진
-![alt text](image-2.png)
+![alt text](image-3.png)
