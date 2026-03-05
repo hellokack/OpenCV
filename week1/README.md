@@ -132,7 +132,7 @@ cv.destroyAllWindows() # 모든 창을 닫고 프로그램을 종료합니다.
 ```
 
 ### 5. 실행 결과 사진
-![alt text](image-1.png)
+![alt text](image-4.png)
 
 ---
 
@@ -255,4 +255,5 @@ cv.destroyAllWindows() # 모든 창을 닫습니다.
 ```
 
 ### 5. 실행 결과 사진
-![alt text](image-3.png)
+![alt text](image-2.png)
+![alt text](task3_result.jpg)
