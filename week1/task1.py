@@ -8,7 +8,7 @@ img = cv.imread('soccer.jpg')
 # cv.resize 함수를 사용하여 이미지의 가로(fx)와 세로(fy) 비율을 각각 50%로 축소합니다.
 img = cv.resize(img, None, fx=0.5, fy=0.5, interpolation=cv.INTER_AREA)
 
-# 2. 이미지를 그레이스케일로 변환
+# 2. 이미지를 그레이스케일로 변환cd week1
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) 
 
 # 3. 원본과 병합하기 위한 차원 맞추기
