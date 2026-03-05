@@ -18,8 +18,10 @@ gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 # 두 이미지를 가로로 연결하기 위해 흑백 이미지를 3채널로 변경 후 병합
 gray_3c = cv.cvtColor(gray, cv.COLOR_GRAY2BGR)
 result = np.hstack((img, gray_3c))
+```
 
 ### 4. 전체 코드
+```python
 <details>
 <summary>코드 전체 보기 (클릭)</summary>
 import cv2 as cv # OpenCV 라이브러리를 cv라는 이름으로 불러옵니다.
@@ -50,5 +52,6 @@ cv.waitKey(0)
 cv.destroyAllWindows()
 
 </details>
+```
 ### 5. 실행 결과 사진
 ![alt text](image.png)
